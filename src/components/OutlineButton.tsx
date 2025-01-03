@@ -1,5 +1,6 @@
 import { Button, type ButtonProps } from "./ui/button";
 import { cn } from "~/lib/utils";
+
 type OutlineButtonProps = ButtonProps;
 
 const OutlineButton: React.FC<OutlineButtonProps> = ({
@@ -8,7 +9,10 @@ const OutlineButton: React.FC<OutlineButtonProps> = ({
 }) => {
   return (
     <Button
-      className={cn("rounded-none border-2 border-[#FFDC87]", className)}
+      className={cn(
+        "border-glory-gold-500 hover:button-hover text-glory-text rounded-none border-2",
+        className,
+      )}
       {...props}
     />
   );
