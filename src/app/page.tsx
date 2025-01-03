@@ -1,9 +1,10 @@
+import Container from "~/components/Container";
 import Navbar from "~/components/Navbar";
 
 export default function Homepage() {
   return (
-    <div>
+    <Container className="">
       <Navbar />
-    </div>
+    </Container>
   );
 }
